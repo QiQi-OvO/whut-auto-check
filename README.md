@@ -17,7 +17,7 @@
 3. 把bin文件下的[auto-check](./bin/auto-check),与[res](./res)复制到新的文件夹下
 4. 执行```crontab -e``` 加入下面一行
 ```shell
-* */13 * * * 3中新文件路径/auto-check --path 你用来存放userInfo.json的路径/userInfo.json > 输出log文件的路径/log.txt
+0 */13 * * * 3中新文件路径/auto-check --path 你用来存放userInfo.json的路径/userInfo.json > 输出log文件的路径/log.txt
 ```
 5. 执行```service cron restart```
 ### 自定义功能
